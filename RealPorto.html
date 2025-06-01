@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Muhammad Salman 'Audah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins';
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #1a1a1a;
+        }
+
+        .navbar a {
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #FFA500;
+        }
+
+        .header {
+            text-align: center;
+            background-image: url('backgroundhome.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 30px 20px;
+        }   
+
+
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .bio-section {
+            background-color: rgba(0, 0, 0, 0.65);
+            color: white;
+            padding: 25px;
+            border-radius: 16px;
+            text-align: justify;
+            margin: 30px 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin: 10px;
+        }
+
+        .photo-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .description {
+            padding: 15px;
+        }
+
+        .description h3 {
+            margin: 0 0 5px;
+            color: #db5101;
+        }
+
+        .description p {
+            margin: 0;
+        }
+
+        .download-cv {
+            background-color: #db5101;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .download-cv:hover {
+            background-color: #FFA500;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 800px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .nav-button:hover {
+            background-color: #db5101;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #FFA500;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 10px;
+            }
+
+            .download-cv {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Logo Salman.png" alt="Logo" style="height: 100px;">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Cerita Perjalanan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="header">
+        <h1>Muhammad Salman 'Audah</h1>
+        <p>Mahasiswa Pendidikan Multimedia, Universitas Pendidikan Indonesia</p>
+        <img src="bg1.JPG" alt="Foto Profil Salman" class="profile-photo">
+    </div>
+
+    <div class="container">
+        <div class="bio-section">
+            <h2 class="text-center">Tentang Saya</h2>
+            <p>
+                Saya adalah mahasiswa aktif UPI di Program Studi Pendidikan Multimedia yang memiliki semangat besar dalam menciptakan perubahan. Visi saya adalah mendirikan yayasan pendidikan yang mengintegrasikan teknologi, media kreatif, dan peternakan. Tujuannya? Agar generasi muda Indonesia bisa berkembang, berkarya, dan mandiri secara ekonomi.
+            </p>
+            <p>
+                Saya juga seorang penghafal Qur’an 30 Juz, ketua himpunan mahasiswa, pemenang lomba video tingkat internasional, dan pembicara dalam berbagai pelatihan kepemimpinan serta kewirausahaan. Aktif di dunia dakwah, desain, pendidikan, dan teknologi, saya percaya bahwa setiap langkah kecil bisa membawa dampak besar.
+            </p>
+            <p>
+                Website ini adalah ruang berbagi karya, pemikiran, dan semangat perjuangan. Semoga kita bisa terhubung, terinspirasi, dan tumbuh bersama dalam kontribusi nyata untuk negeri.
+            </p>
+        </div>
+
+        <div id="portfolio" class="header">
+            <h2>Portofolio Pembicara & Moderator</h2>
+            <p>Beberapa dokumentasi Salman ketika public speaking</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="photo-card">
+                <img src="Photo1.JPG" alt="Pemateri PECI">
+                <div class="description">
+                    <h3>Pemateri PECI</h3>
+                    <p>Diundang menjadi pemateri dalam kegiatan PECI (Pedia Berbagi di Bulan Suci), di Panti Asuhan Himmatun Ayat, Cibiru.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo10.JPG" alt="Moderator Tutorial PAI 2024">
+                <div class="description">
+                    <h3>Moderator Tutorial PAI 2024</h3>
+                    <p>Moderator kegiatan Tutorial-PAI 2024 bersama Pak Dr. Agus Fahruddin, S.Pd, M.Pd.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo4.JPG" alt="Moderator ODWH UPI">
+                <div class="description">
+                    <h3>Moderator ODWH UPI</h3>
+                    <p>Moderator kegiatan ODWH bersama dosen Pendidikan Multimedia.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo12.jpg" alt="Wakil Presiden OSAKA">
+                <div class="description">
+                    <h3>Wakil Presiden OSAKA</h3>
+                    <p>Membagikan skill kepada santri Al-Kautsar sebagai Wakil Presiden Organisasi Santri.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo11.JPG" alt="Moderator Kajian Islami">
+                <div class="description">
+                    <h3>Moderator Kajian Islami</h3>
+                    <p>Moderator kajian islami bersama kang Choqy Isyraqi, tema "Life Plan Generasi Qurani".</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo6.jpg" alt="MC Upgrading DIGIMON">
+                <div class="description">
+                    <h3>MC Upgrading Panitia DIGIMON</h3>
+                    <p>MC dalam program pengabdian masyarakat DIGIMON.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo7.jpg" alt="Ketua Pelaksana AKARISTA">
+                <div class="description">
+                    <h3>Sambutan Ketua Pelaksana AKARISTA 5</h3>
+                    <p>Menyampaikan sambutan sebagai ketua pelaksana kegiatan antar pelajar se-Pulau Jawa.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo8.jpg" alt="Kajian Ibu-Ibu">
+                <div class="description">
+                    <h3>Kajian Bulanan Ibu-Ibu</h3>
+                    <p>Mengisi kajian rutin di desa Wangunjaya, Ciamis. Dalam program pengabdian pada masyarakat XII.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="Photo3.png" alt="Pemateri Dunia Perkuliahan">
+                <div class="description">
+                    <h3>Pemateri Dunia Perkuliahan</h3>
+                    <p>Berbagi inspirasi dan pengalaman kuliah kepada santri Al-Kautsar Banjar.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cv" class="text-center">
+            <div class="download-cv" onclick="window.location.href='CVbnran.png'">
+                Download CV
+            </div>
+        </div>
+
+        <div id="about" class="header">
+            <h2>Tentang Saya</h2>
+            <p>Cerita perjalanan kehidupan Salman</p>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-track" id="slider">
+                <div class="slide"><img src="CV (8).png" alt="Foto 1"></div>
+                <div class="slide"><img src="CV (1).png" alt="Foto 2"></div>
+                <div class="slide"><img src="CV (2).png" alt="Foto 3"></div>
+                <div class="slide"><img src="CV (3).png" alt="Foto 4"></div>
+                <div class="slide"><img src="CV (4).png" alt="Foto 5"></div>
+                <div class="slide"><img src="CV (5).png" alt="Foto 6"></div>
+                <div class="slide"><img src="CV (6).png" alt="Foto 7"></div>
+                <div class="slide"><img src="CV (7).png" alt="Foto 8"></div>
+            </div>
+            <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© Muhammad Salman 'Audah</p>
+            <p>Follow me on:</p>
+            <a href="https://www.instagram.com/salmanaudah_" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/in/muhammad-salman-audah-31305a2a6/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        const slider = document.getElementById("slider");
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function showSlide(i) {
+            const width = slides[0].clientWidth;
+            slider.style.transform = `translateX(${-width * i}px)`;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+
+        let startX;
+        slider.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        slider.addEventListener("touchend", (e) => {
+            const endX = e.changedTouches[0].clientX;
+            if (startX - endX > 50) nextSlide();
+            else if (endX - startX > 50) prevSlide();
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
